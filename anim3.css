@@ -1,0 +1,45 @@
+body {
+  background-color: #666460;
+}
+span {
+  color: yellow;
+  font-size: 150px;
+  animation-name: changing;
+  position: relative;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  /* animation-delay: 1s; */
+  animation-direction: alternate-reverse;
+}
+span:nth-child(8) {
+  animation-delay: 0s;
+}
+span:nth-child(7) {
+  animation-delay: 0.2s;
+}
+span:nth-child(6) {
+  animation-delay: 0.4s;
+}
+span:nth-child(5) {
+  animation-delay: 0.6s;
+}
+span:nth-child(4) {
+  animation-delay: 0.8s;
+}
+span:nth-child(3) {
+  animation-delay: 1s;
+}
+span:nth-child(2) {
+  animation-delay: 1.2;
+}
+span:nth-child(1) {
+  animation-delay: 1.4s;
+}
+@keyframes changing {
+  0% {
+    color: white;
+  }
+  100% {
+    color: yellow;
+  }
+}
